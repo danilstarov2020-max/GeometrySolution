@@ -1,19 +1,18 @@
-﻿namespace GeometryLibrary
+﻿namespace GeometryApp;
+
+public class Parallelogram
 {
-    public class Parallelogram
+    public double A { get; set; }
+    public double B { get; set; }
+    public double H { get; set; }
+
+    public double Area()
     {
-        public double A { get; set; }
-        public double B { get; set; }
-        public double H { get; set; }
+        return A * H;
+    }
 
-        public double Area()
-        {
-            return A * H;
-        }
-
-        public double Perimeter()
-        {
-            return 2 * (A + B);
-        }
+    public double Perimeter()
+    {
+        return 2 * (A + B);
     }
 }
