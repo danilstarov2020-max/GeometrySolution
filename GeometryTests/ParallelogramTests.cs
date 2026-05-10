@@ -1,5 +1,5 @@
-﻿using NUnit.Framework;
-using GeometryLibrary;
+using NUnit.Framework;
+using GeometryApp;
 
 namespace GeometryTests
 {
