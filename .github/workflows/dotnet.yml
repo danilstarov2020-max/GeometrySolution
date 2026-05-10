@@ -16,11 +16,11 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore
-      run: dotnet restore GeometryTests/GeometryTests.csproj
+    - name: Restore all
+      run: dotnet restore
 
-    - name: Build
-      run: dotnet build GeometryTests/GeometryTests.csproj --no-restore
+    - name: Build all
+      run: dotnet build --no-restore
 
-    - name: Test
-      run: dotnet test GeometryTests/GeometryTests.csproj --no-build --verbosity normal
+    - name: Test all
+      run: dotnet test --no-build --verbosity normal
